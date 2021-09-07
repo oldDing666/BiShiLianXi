@@ -20,6 +20,7 @@ public class Test_01 {
         List<Integer> list = Arrays.asList(1, 3, 5, 2, 4, 6);
         Set<String> set = new HashSet<>();
         String str = " Hello World!!我在本地已经被改变了";
+        String str2 = " Hello World!!我在本地已经被改变了V2";
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
