@@ -23,6 +23,8 @@ public class Test_01 {
         String str2 = " Hello World!!我在本地已经被改变了V2";
         String str3 = " Hello World!!我在远程库已经被改变了";
         String str4 = " 我解决了远程库和本地库的冲突";
+        String str5 = " 我在本地库做了修改，准备提交到github远程库";
+
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
