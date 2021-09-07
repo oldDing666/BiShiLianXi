@@ -22,6 +22,7 @@ public class Test_01 {
         String str = " Hello World!!";
         str = str.trim();
         // iIlL0oO
+        // iIlL0oO
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
