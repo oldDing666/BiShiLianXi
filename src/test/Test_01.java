@@ -17,12 +17,14 @@ public class Test_01 {
 //        System.out.println(str.split(" ")[0]);
 //        System.out.println(str.split(" ")[1]);
         // 自动导包
-        List<String> list = new ArrayList<>();
+        List<Integer> list = Arrays.asList(1, 3, 5, 2, 4, 6);
         Set<String> set = new HashSet<>();
         String str = " Hello World!!";
         str = str.trim();
         // iIlL0oO
-
-        System.out.println(str.split(" ").length);
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+//        System.out.println(str.split(" ").length);
     }
 }
