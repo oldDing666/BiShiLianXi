@@ -24,8 +24,14 @@ public class Test_01 {
         String str3 = " Hello World!!我在远程库已经被改变了";
         String str4 = " 我解决了远程库和本地库的冲突";
         String str5 = " 我在本地库做了修改，准备提交到github远程库";
+//<<<<<<< HEAD
         String str7 = " github远程库被修改，本地库无法提交";
 
+//=======
+        String str6 = " 我在github做了修改，制造冲突";
+//>>>>>>> 9a6fc968111a4b58c8cfb498516c2371266e8c47
+
+        String str8 = " 我在本地解决了github被修改造成的冲突";
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
