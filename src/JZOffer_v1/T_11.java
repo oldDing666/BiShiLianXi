@@ -9,14 +9,18 @@ import java.util.Map;
  */
 public class T_11 {
     public int minArray(int[] numbers) {
-        for (int i = 1; i < numbers.length - 1; i++) {
-            if (numbers[i] == numbers[i - 1])
-                continue;
-            if (numbers[i] <= numbers[i - 1] && numbers[i] < numbers[i + 1]
-                    || numbers[i] < numbers[i - 1] && numbers[i] <= numbers[i + 1]
-            )
-                return numbers[i];
+        int l = 0, r = numbers.length - 1;
+        while (l < r) {
+            int m = l + (r - l) / 2;
+            if (numbers[m] < numbers[r]) {
+                r = m;
+            } else if (numbers[m] > numbers[r]) {
+                l = m + 1;
+            } else {
+                r--;
+            }
         }
-        return Math.min(numbers[0], numbers[numbers.length - 1]);
+        return numbers[l];
     }
+
 }
